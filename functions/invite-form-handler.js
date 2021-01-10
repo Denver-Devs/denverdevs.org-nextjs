@@ -1,5 +1,4 @@
-var request = require("request");
-require("request").debug = true;
+var axios = require("axios");
 
 exports.handler = function (event, context, callback) {
   var cb = function (data) {
@@ -52,7 +51,7 @@ exports.handler = function (event, context, callback) {
     ],
   });
 
-  request.post(
+  axios.post(
     {
       url:
         "https://hooks.slack.com/services/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",
