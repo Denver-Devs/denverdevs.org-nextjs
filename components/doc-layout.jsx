@@ -1,6 +1,6 @@
 import React from "react";
 
-const DocLayout = () => {
+const DocLayout = ({children}) => {
   return (
     <div className="bg-white dark:bg-gray-900">
       <div className="container mx-auto">
